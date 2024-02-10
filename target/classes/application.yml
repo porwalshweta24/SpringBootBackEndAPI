@@ -1,0 +1,26 @@
+jwt:
+  expirationDateInMs: 8000000
+  secret: omdbmovies
+omdb:
+  api:
+    base-url: http://www.omdbapi.com/
+    key: ce7f30b
+server:
+  port: 8080
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:testdb
+    username: sa
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  main:
+    allow-bean-definition-overriding: true
